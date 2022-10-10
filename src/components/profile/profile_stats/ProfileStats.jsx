@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { BiLike } from 'react-icons/bi';
 import { GrOverview } from 'react-icons/gr';
 import { RiUserFollowLine } from 'react-icons/ri';
@@ -22,4 +23,9 @@ export const StatsInfo = ({ followers, views, likes }) => {
       </StatsItem>
     </StatsBlock>
   );
+};
+StatsInfo.propTypes = {
+  followers: PropTypes.number.isRequired,
+  views: PropTypes.number.isRequired,
+  likes: PropTypes.number.isRequired,
 };

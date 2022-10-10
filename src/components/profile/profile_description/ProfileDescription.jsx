@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import {
   Description,
   Avatar,
@@ -14,4 +15,10 @@ export const DescriptionBlock = ({ avatar, username, tag, location }) => {
       <Location>{location}</Location>
     </Description>
   );
+};
+DescriptionBlock.propTypes = {
+  avatar: PropTypes.string.isRequired,
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
 };

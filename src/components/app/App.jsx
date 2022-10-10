@@ -12,7 +12,7 @@ export const App = () => {
   return (
     <Wraper>
       <Profile profile={profiles} />
-      <Statistics statistics={statistics} />
+      <Statistics title="Upload stats" statistics={statistics} />
       <FriendList friends={friends} />
       <TransactionHistory transactions={transactions} />
     </Wraper>
